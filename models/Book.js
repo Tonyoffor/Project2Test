@@ -12,18 +12,31 @@ Book.init(
       autoIncrement: true,
     },
     name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    author: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
+      //allowNull: false,
     },
     description: {
       type: DataTypes.TEXT,
     },
-    review: {
-      type: DataTypes.TEXT,
-    }
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
+    author: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    image: {
+      type: DataTypes.STRING,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
