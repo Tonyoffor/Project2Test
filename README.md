@@ -47,8 +47,10 @@ No test have been included for this project.
 ## Questions
 
 GitHub: [gregarijah](https://github.com/gregarijah) 
+GitHub: [TonyOffor] (https://github.com/Tonyoffor)
 
 E-Mail: [greg.arijah@gmail.com](mailto:greg.arijah@gmail.com)
+E-Mail: [tonyc.offor@gmail.com]
 
 
 
