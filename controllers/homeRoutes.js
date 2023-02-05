@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/book/:id', async (req, res) => {
+router.get('/book/:id',withAuth, async (req, res) => {
   try {
     const bookData = await Book.findByPk(req.params.id, {
       include: [
